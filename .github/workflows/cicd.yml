@@ -1,7 +1,9 @@
 name: TestWorkflow
-
+# workflow_dispatch only for main branch
 on:
     workflow_dispatch
+    # schedule:
+        # - cron: "5 * * * *"
     # pull_request:
         # types:
             # - opened
@@ -22,4 +24,4 @@ jobs:
 
         steps:
             - name: Display
-              run: echo "My testing workflow"
+              run: echo "My manual testing workflow updated"
