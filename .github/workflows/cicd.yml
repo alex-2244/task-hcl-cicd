@@ -16,8 +16,13 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: print
-              run: echo "Welcome to Github Actions!! - Manuall trigger added"
+            # - name: print
+            - name: Setup Java JDK
+              uses: actions/setup-java@v5.2.0
+              with:
+                  java-version: "17"
+                  distribution: "microsoft"
+              # run: echo "Welcome to Github Actions!! - Manuall trigger added"
 
     test:
         runs-on: ubuntu-latest
