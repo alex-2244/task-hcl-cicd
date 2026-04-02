@@ -1,0 +1,18 @@
+name: TestWorkflow
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print
+        run: echo "Welcome to Github Actions!!"
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display
+        run: echo "My testing workflow"
