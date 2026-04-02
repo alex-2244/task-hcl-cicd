@@ -1,9 +1,10 @@
 name: TestWorkflow
 
 on:
-    pull_request:
-        types:
-            - opened
+    workflow_dispatch
+    # pull_request:
+        # types:
+            # - opened
         # branches:
             # - main
             # - !'develop'
