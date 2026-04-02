@@ -29,4 +29,4 @@ jobs:
 
         steps:
             - name: Display
-              run: echo "My manual testing workflow updated ${{ github }}"
+              run: echo "My manual testing workflow updated ${{ github.event_name }}, ${{ github.event_path }}, ${{ github.ref }}, ${{ github.actor }}, ${{ github.action_status }}"
