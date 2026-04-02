@@ -15,7 +15,7 @@ jobs:
 
         steps:
             - name: print
-              run: echo "Welcome to Github Actions!!"
+              run: echo "Welcome to Github Actions!! - Manuall trigger added"
 
     test:
         runs-on: ubuntu-latest
