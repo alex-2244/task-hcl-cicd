@@ -2,8 +2,10 @@ name: TestWorkflow
 
 on:
     pull_request:
-        branches:
-            - "main"
+        types:
+            - opened
+        # branches:
+            # - main
             # - !'develop'
 
 jobs:
